@@ -30,6 +30,6 @@ Copyright
 3-clause BSD license, because you may not want to use the GPL on your documents.
 :-) Well if you do, hat off to you, but of course you don't have to.
 
-mini-tutorial.js_ (https://www.github.com/DennisSchulmeister/mini-tutorial.js) <br/>
+mini-tutorial.js (https://www.github.com/DennisSchulmeister/mini-tutorial.js) <br/>
 This template: (https://www.github.com/DennisSchulmeister/mt-template) <br/>
 © 2018 Dennis Schulmeister-Zimolong <dennis@pingu-mail.de>
