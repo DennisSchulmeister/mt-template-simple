@@ -23,6 +23,14 @@ Use the following commands while working on a document:
 The project may contain as many documents as you like. Each one of them is
 just a HTML file in the `src` directory. See `src/index.html` for an example.
 
+Screenshot
+----------
+
+And here comes the obligatory screenshot. This is just a simple layout using
+the builtin `white.css` theme. The Table of Contents is directly above the text.
+
+![Screenshot](screenshot.png)
+
 Copyright
 ---------
 
