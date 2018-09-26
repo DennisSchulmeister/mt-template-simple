@@ -31,6 +31,13 @@ the builtin `white.css` theme. The Table of Contents is directly above the text.
 
 ![Screenshot](screenshot.png)
 
+Other templates
+---------------
+
+ * [mt-template-simple](https://www.github.com/DennisSchulmeister/mt-template-simple) (this one)
+ * [mt-template-roundbox](https://www.github.com/DennisSchulmeister/mt-template-roundbox)
+ * [mt-template-book](https://www.github.com/DennisSchulmeister/mt-template-book)
+
 Copyright
 ---------
 
@@ -39,5 +46,5 @@ Copyright
 :-) Well if you do, hat off to you, but of course you don't have to.
 
 mini-tutorial.js (https://www.github.com/DennisSchulmeister/mini-tutorial.js) <br/>
-This template: (https://www.github.com/DennisSchulmeister/mt-template) <br/>
+This template: (https://www.github.com/DennisSchulmeister/mt-template-simple) <br/>
 © 2018 Dennis Schulmeister-Zimolong <dennis@pingu-mail.de>
