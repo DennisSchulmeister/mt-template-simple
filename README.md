@@ -58,7 +58,9 @@ window.addEventListener("load", () => {
         ],
         plugins: [
             new LS_Plugin_Markdown(),
-            new LS_Plugin_ExtraTags(),
+            new LS_Plugin_ExtraTags({
+                quizExerciseHeading: "h3",
+            }),
             new LS_Plugin_HighlightJS({
                 languages: {
                     javascript: HLJS_Language_JS,
@@ -70,7 +72,6 @@ window.addEventListener("load", () => {
 
     mt.start();
 });
-
 ```
 
 Here are a few notes to keep in mind when making changes to this file:
