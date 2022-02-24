@@ -8,7 +8,6 @@
     "bugs": {
         "url": "https://github.com/DennisSchulmeister/mt-template-simple/issues"
     },
-    "main": "index.js",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/DennisSchulmeister/mt-template-simple.git"
@@ -19,19 +18,29 @@
         "documentation",
         "manual"
     ],
+    "main": "src/index.js",
+    "type": "module",
     "scripts": {
         "clean": "node scripts/clean.js",
-        "build": "npm run clean; parcel build src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
-        "watch": "npm run clean; parcel watch src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
-        "start": "parcel src/index.html --open"
+        "build": "npm run clean; node scripts/build-static.js; node scripts/esbuild-bundle.js",
+        "start": "node scripts/esbuild-serve.js"
+    },
+    "config": {
+        "src_dir": "src",
+        "static_dir": "static",
+        "build_dir": "build",
+        "public_url": "",
+        "replace_variables_extensions": ".htm; .html"
     },
     "devDependencies": {
-        "babel-core": "^6.26.3",
-        "babel-plugin-transform-runtime": "^6.23.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-runtime": "^6.26.0",
-        "mini-tutorial.js": "^1.0.8",
-        "parcel-bundler": "^1.12.3",
-        "shelljs": "^0.7.8"
-    }
+        "@dschulmeis/ls-plugin-extra-tags": "^2.0.0",
+        "@dschulmeis/ls-plugin-highlight.js": "^2.0.1",
+        "@dschulmeis/ls-plugin-markdown": "^1.0.0",
+        "@dschulmeis/mini-tutorial.js": "^2.0.2",
+        "bootstrap": "^5.1.3",
+        "esbuild": "^0.14.23",
+        "esbuild-plugin-less": "^1.1.6",
+        "shelljs": "^0.8.5"
+    },
+    "dependencies": {}
 }

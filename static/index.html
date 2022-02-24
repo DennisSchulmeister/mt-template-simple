@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>__Document Title__</title>
+
+        <script src="_bundle.js"></script>
+        <link rel="stylesheet" href="_bundle.css" />
+        <link rel="shortcut icon" href="favicon.png" />
+    </head>
+    <body class="hidden">
+        <!-- Page Header and Table of Contents -->
+        <header>
+            <h1>__Document Title__</h1>
+
+            <p class="subtitle">
+                Catchphrase or subtitle of the document
+            </p>
+
+            <section id="toc" data-title="Table of Contents"></section>
+        </header>
+
+        <!-- Document chapters -->
+        <main>
+            <section data-title="First Chapter">
+                <div class="markdown">
+                    ### Chapter Content
+
+                    This is chapter one.
+                </div>
+
+                <lsx-info-box>
+                    Use markdown syntax and <src-code language="html">&lt;lsx-…&gt;</src-code>
+                    HTML tags as you wish.
+                </lsx-info-box>
+            </section>
+
+            <section data-title="Second Chapter">
+                <div class="markdown">
+                    ### Another chapter
+
+                    Here goes another chapter, this one using the
+                    <src-code language="html">&lt;lsx-tab-pages&gt;</src-code>
+                    element and some syntax highlighted source code.
+                </div>
+
+                <lsx-tab-pages>
+                    <lsx-tab-page title="Determine Line Breaks">
+                        <source-code language="javascript">
+                            export function determineLinebreaks(text) {
+                                if (text.includes("\r\n")) return "\r\n";
+                                else if (text.includes("\n")) return "\n";
+                                else if (text.includes("\r")) return "\r";
+                                else return "";
+                            }
+                        </source-code>
+                    </lsx-tab-page>
+                    <lsx-tab-page title="Remove Leading Line Breaks">
+                        <source-code language="javascript">
+                            export function removeLeadingLinebreaks(text) {
+                                let linebreak = determineLinebreaks(text);
+                                if (linebreak === "") return text;
+
+                                while (text.startsWith(linebreak)) {
+                                    text = text.slice(linebreak.length);
+                                }
+
+                                return text;
+                            }
+                        </source-code>
+                    </lsx-tab-page>
+                </lsx-tab-pages>
+
+                <p>
+                    Some more content:
+                </p>
+                <lsx-ul emoji="🐻">
+                    <li>@dschulmeis/mini-tutorial.js</li>
+                    <li>@dschulmeis/lecture-slides.js</li>
+                    <li>@dschulmeis/ls-plugin-extra-tags</li>
+                    <li>@dschulmeis/ls-plugin-highlight.js</li>
+                    <li>@dschulmeis/ls-markdown</li>
+                </lsx-ul>
+            </section>
+
+            <section data-title="Third Chapter">
+                This is chapter three.
+            </section>
+
+            <section data-title="Fourth Chapter">
+                This is chapter four.
+            </section>
+        </main>
+
+        <!-- Navigation and Copyright -->
+        <footer>
+            <nav></nav>
+            <p>
+                © Your copyright information here
+            </p>
+        </footer>
+    </body>
+</html>
